@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<doc>
+	<meta>
+		<description>the description</description>
+		<keywords>one, two</keywords>
+	</meta>
+	<data title="The list on this page">
+		<item id="1">one</item>
+		<item id="2">two</item>
+		<item id="3">three</item>
+	</data>
+</doc>

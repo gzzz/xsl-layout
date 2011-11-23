@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<layout:html
+	xmlns:layout="http://groundzero.ru/layout/"
+	xmlns:og="http://ogp.me/ns#"
+>
+	<layout:head>
+		<layout:meta>
+			<layout:charset/>
+			<layout:description/>
+			<layout:keywords/>
+			<!--og:description/-->
+		</layout:meta>
+		<layout:title/>
+		<layout:styles/>
+	</layout:head>
+	<layout:body>
+		<layout:header>
+			<layout:navigation/>
+		</layout:header>
+		<layout:search/>
+		<layout:content>
+			<layout:left/>
+			<layout:right>
+				<layout:crumbs/>
+			</layout:right>
+		</layout:content>
+		<layout:footer>
+			<layout:copyright/>
+		</layout:footer>
+		<layout:scripts/>
+	</layout:body>
+</layout:html>

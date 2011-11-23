@@ -1,0 +1,22 @@
+﻿@postprocess[res]
+$result[^res.match[%rusage%;]{^rusage[]}]
+
+@main[]
+$xdDoc[^xdoc::create{<?xml version="1.0" encoding="$response:charset"?>
+<doc>
+	<meta>
+		<description>the description</description>
+		<keywords>one, two</keywords>
+	</meta>
+	<data title="The list on this page">
+		<item id="1">one</item>
+		<item id="2">two</item>
+		<item id="3">three</item>
+	</data>
+	<rusage>%rusage%</rusage>
+</doc>}]
+$xdPage[^xdDoc.transform[index.xsl]]
+$result[^taint[as-is][^xdPage.string[
+	$.method[html]
+	$.indent[no]
+]]]
