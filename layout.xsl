@@ -17,7 +17,7 @@
 	extension-element-prefixes="layout og"
 >
 
-	<xsl:param name="layout-name">xsl-layout</xsl:param>
+	<xsl:param name="layout-name">layout</xsl:param>
 	<!-- структура документа -->
 	<xsl:variable name="layout" select="document(concat($layout-name, '.xml'))/layout:html"/>
 

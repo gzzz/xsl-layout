@@ -9,6 +9,8 @@
 
 	<xsl:import href="default.xsl"/>
 
+	<xsl:variable name="content" select="/doc"/>
+
 	<xsl:template match="layout:styles" mode="node">
 		<xsl:apply-imports/>
 		<link href="/css/index.css" rel="stylesheet"/>
