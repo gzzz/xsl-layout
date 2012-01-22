@@ -66,6 +66,15 @@
 		</meta>
 	</xsl:template>
 
+	<!-- применяется к canonical, генерирует узел канонического адреса -->
+	<xsl:template match="layout:meta/layout:canonical" mode="node">
+		<link rel="canonical">
+			<xsl:attribute name="href">
+				<xsl:apply-templates select="." mode="content"/>
+			</xsl:attribute>
+		</link>
+	</xsl:template>
+
 	<!-- применяется к узлам в meta с не-layout пространством имён, генерирует узел meta, зовёт шаблоны для получения атрибута content -->
 	<xsl:template match="layout:meta/*" mode="node" priority="-0.1">
 		<meta name="{name()}">
