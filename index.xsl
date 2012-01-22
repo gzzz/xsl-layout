@@ -22,6 +22,10 @@
 		<xsl:value-of select="$content/data/@title"/>
 	</xsl:template>
 
+	<xsl:template match="layout:canonical" mode="content">
+		<xsl:text>/</xsl:text>
+	</xsl:template>
+
 	<xsl:template match="layout:crumbs" mode="content">
 		<xsl:apply-imports/>
 		<xsl:text> / </xsl:text>
