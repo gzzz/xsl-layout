@@ -69,10 +69,6 @@
 		<a id="copyright">© gz, 2011</a>
 	</xsl:template>
 
-	<xsl:template match="layout:title" mode="content">
-		<xsl:text>The layout project</xsl:text>
-	</xsl:template>
-
 	<xsl:template match="layout:crumbs" mode="content">
 		<a href="/">The layout project</a>
 	</xsl:template>
