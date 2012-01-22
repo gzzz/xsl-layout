@@ -10,4 +10,5 @@
 		<item id="2">two</item>
 		<item id="3">three</item>
 	</data>
+	<rusage>%rusage%</rusage>
 </doc>
