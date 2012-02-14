@@ -9,6 +9,7 @@
 			<layout:charset/>
 			<layout:description/>
 			<layout:keywords/>
+			<layout:canonical/>
 			<!--og:description/-->
 		</layout:meta>
 		<layout:title/>

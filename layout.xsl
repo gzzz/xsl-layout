@@ -17,18 +17,18 @@
 	extension-element-prefixes="layout og"
 >
 
-	<xsl:param name="layout-name">layout</xsl:param>
+	<xsl:param name="layout:layout-name">layout</xsl:param>
 	<!-- структура документа -->
-	<xsl:variable name="layout" select="document(concat($layout-name, '.xml'))/layout:html"/>
+	<xsl:variable name="layout:layout" select="document(concat($layout:layout-name, '.xml'))/layout:html"/>
 
 
 	<!-- по умолчанию начинаем строить структуру страницы -->
 	<xsl:template match="/">
-		<xsl:apply-templates select="$layout" mode="node"/>
+		<xsl:apply-templates select="$layout:layout" mode="node"/>
 	</xsl:template>
 
 
-	<!-- применяется ко всем узлам, выдаёт div="имя-узла", зовёт шаблоны дочерних узлов -->
+	<!-- применяется ко всем узлам, выдаёт div id="имя-узла", зовёт шаблоны дочерних узлов -->
 	<xsl:template match="layout:*" mode="node">
 		<div id="{local-name()}">
 			<xsl:apply-templates select="." mode="begin"/>
