@@ -31,29 +31,23 @@
 	<!-- применяется ко всем узлам, выдаёт div id="имя-узла", зовёт шаблоны дочерних узлов -->
 	<xsl:template match="layout:*" mode="node">
 		<div id="{local-name()}">
-			<xsl:apply-templates select="." mode="begin"/>
 			<xsl:apply-templates mode="node"/>
 			<xsl:apply-templates select="." mode="content"/>
-			<xsl:apply-templates select="." mode="end"/>
 		</div>
 	</xsl:template>
 
 	<!-- применяется к html, head, body и title, выдаёт узел с заданным именем, зовёт шаблоны дочерних узлов -->
 	<xsl:template match="layout:html|layout:head|layout:body|layout:title" mode="node">
 		<xsl:element name="{local-name()}">
-			<xsl:apply-templates select="." mode="begin"/>
 			<xsl:apply-templates mode="node"/>
 			<xsl:apply-templates select="." mode="content"/>
-			<xsl:apply-templates select="." mode="end"/>
 		</xsl:element>
 	</xsl:template>
 
 	<!-- применяется к meta, stiles и scripts, не генерирует узел, сразу зовёт шаблоны дочерних узлов -->
 	<xsl:template match="layout:meta|layout:styles|layout:scripts" mode="node">
-		<xsl:apply-templates select="." mode="begin"/>
 		<xsl:apply-templates mode="node"/>
 		<xsl:apply-templates select="." mode="content"/>
-		<xsl:apply-templates select="." mode="end"/>
 	</xsl:template>
 
 	<!-- применяется к узлам в meta, генерирует узел meta, зовёт шаблоны для получения атрибута content -->
@@ -86,7 +80,5 @@
 
 	<!-- по умолчанию никакое текстовое содержимое не выводим -->
 	<xsl:template match="layout:*" mode="content"/>
-	<xsl:template match="layout:*" mode="begin"/>
-	<xsl:template match="layout:*" mode="end"/>
 
 </xsl:stylesheet>
