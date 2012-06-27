@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<layout:html
-	xmlns:layout="http://groundzero.ru/layout/"
+<l:html
+	xmlns:l="http://groundzero.ru/layout/"
 	xmlns:og="http://ogp.me/ns#"
 >
-	<layout:head>
-		<layout:meta>
-			<layout:charset/>
-			<layout:description/>
-			<layout:keywords/>
-			<layout:canonical/>
+	<l:head>
+		<l:meta>
+			<l:charset/>
+			<l:description/>
+			<l:keywords/>
+			<l:canonical/>
 			<!--og:description/-->
-		</layout:meta>
-		<layout:title/>
-		<layout:styles/>
-	</layout:head>
-	<layout:body>
-		<layout:header>
-			<layout:navigation/>
-		</layout:header>
-		<layout:search/>
-		<layout:content>
-			<layout:left/>
-			<layout:right>
-				<layout:crumbs/>
-			</layout:right>
-		</layout:content>
-		<layout:footer>
-			<layout:copyright/>
-		</layout:footer>
-		<layout:scripts/>
-	</layout:body>
-</layout:html>
+		</l:meta>
+		<l:title/>
+		<l:styles/>
+	</l:head>
+	<l:body>
+		<l:header>
+			<l:navigation/>
+		</l:header>
+		<l:search/>
+		<l:content>
+			<l:left/>
+			<l:right>
+				<l:crumbs/>
+			</l:right>
+		</l:content>
+		<l:footer>
+			<l:copyright/>
+		</l:footer>
+		<l:scripts/>
+	</l:body>
+</l:html>
