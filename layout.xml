@@ -6,10 +6,10 @@
 >
 	<l:head>
 		<l:meta>
+			<l:canonical/>
 			<l:charset/>
 			<l:description/>
 			<l:keywords/>
-			<l:canonical/>
 			<!--og:description/-->
 		</l:meta>
 		<l:title/>
