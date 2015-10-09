@@ -44,7 +44,7 @@
 		</xsl:element>
 	</xsl:template>
 
-	<!-- применяется к meta, stiles и scripts, не генерирует узел, сразу зовёт шаблоны дочерних узлов -->
+	<!-- применяется к meta, styles и scripts, не генерирует узел, сразу зовёт шаблоны дочерних узлов -->
 	<xsl:template match="l:meta|l:styles|l:scripts" mode="node">
 		<xsl:apply-templates mode="node"/>
 		<xsl:apply-templates select="." mode="content"/>
